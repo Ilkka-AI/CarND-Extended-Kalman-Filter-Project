@@ -4,10 +4,11 @@ Self-Driving Car Engineer Nanodegree Program
 In this project I programmed an extended kalman filter to estimate the state of a moving object of interest (car) with noisy lidar and radar measurements. A simulator was provided, generating simulated radar and lidar observations that were integrated with the extended Kalman filter to track the car. 
 
 I reached RMSE error rates of 
-position_x=0.021696
-positions_y=0.0132926
-velocity_x=0.407475
-velocity_y=0.28578
+
+.position_x=0.021696
+.positions_y=0.0132926
+.velocity_x=0.407475
+.velocity_y=0.28578
 
 Turning off the lidar and using radar only results in significantly higher uncertainty. Using lidar only gives the same accuracy as the integrated data. 
 
