@@ -11,6 +11,7 @@ using std::vector;
 /*
  * Constructor.
  */
+
 FusionEKF::FusionEKF() {
   is_initialized_ = false;
 

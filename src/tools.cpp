@@ -19,6 +19,7 @@ VectorXd Tools::CalculateRMSE(const vector<VectorXd> &estimations,
   rmse<<0,0,0,0;
   
 
+
   //  * the estimation vector size should not be zero
 	//  * the estimation vector size should equal ground truth vector size
 	if(estimations.size() != ground_truth.size()
