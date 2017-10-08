@@ -37,7 +37,7 @@ int main()
   Tools tools;
   vector<VectorXd> estimations;
   vector<VectorXd> ground_truth;
-
+  //cout<<"Hello";
   h.onMessage([&fusionEKF,&tools,&estimations,&ground_truth](uWS::WebSocket<uWS::SERVER> ws, char *data, size_t length, uWS::OpCode opCode) {
     // "42" at the start of the message means there's a websocket message event.
     // The 4 signifies a websocket message
@@ -116,7 +116,8 @@ int main()
     	  double p_y = fusionEKF.ekf_.x_(1);
     	  double v1  = fusionEKF.ekf_.x_(2);
     	  double v2 = fusionEKF.ekf_.x_(3);
-
+	  //out<<"Hey there\n";
+	  //cout<<p_x<<"\n";
     	  estimate(0) = p_x;
     	  estimate(1) = p_y;
     	  estimate(2) = v1;
