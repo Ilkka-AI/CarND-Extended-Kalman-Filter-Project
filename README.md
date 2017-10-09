@@ -5,13 +5,23 @@ In this project I programmed an extended kalman filter to estimate the state of 
 
 I reached RMSE error rates of 
 
-position_x=0.021,
-positions_y=0.013,
-velocity_x=0.407,
-velocity_y=0.285.
+position_x=0.097
+positions_y=0.085,
+velocity_x=0.451,
+velocity_y=0.439.
 
-Turning off the lidar and using radar only results in significantly higher uncertainty. Using lidar only gives the same accuracy as the integrated data. 
+Turning off the lidar and using radar only results in higher uncertainty with values 0.230
+0.346
+0.583
+0.804.
+Using lidar only gives an intermediate accuracy with values, 0.147
+0.115
+0.638
+0.534,
 
+being higher than for the integrated data. 
+
+This confirms the simulated lidar data is more accurate than radar data, but combining them gives the best accuracy. 
 
 This project involves the Term 2 Simulator which can be downloaded [here](https://github.com/udacity/self-driving-car-sim/releases)
 
